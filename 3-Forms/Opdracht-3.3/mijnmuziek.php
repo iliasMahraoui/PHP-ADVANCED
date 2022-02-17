@@ -11,10 +11,10 @@
 <form name id="muziek" action = "mijngegevens.php" method="get">
 <button>
 <a href="mijngegevens.php?
-artiest=Imagine Dragons&
-titel=Enemy&
-JaarVanUitkomst=2019&
-muzieksoort=Pop Rock">Meer informatie</a>
+artiest=Sleepy Hallow&
+titel=2055&
+JaarVanUitkomst=2021&
+muzieksoort=Hiphop/Rap">Meer informatie</a>
 </button>
 </form>
 </body>

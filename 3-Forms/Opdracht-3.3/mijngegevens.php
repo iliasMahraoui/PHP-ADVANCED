@@ -18,10 +18,10 @@
 
 
 <!-- mijngegevens.php?
-artiest=Imagine Dragons&
-titel=Enemy&
-JaarVanUitkomst=2019&
-muzieksoort=Pop Rock -->
+artiest=Sleepy Hallow&
+titel=2055&
+JaarVanUitkomst=2021&
+muzieksoort=Hiphop/Rap -->
 
 
 </body>
