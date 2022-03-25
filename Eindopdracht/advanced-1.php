@@ -10,7 +10,7 @@
  
 <body>
 <center>
-<h3 style=text-align:center>Ties Stapper Eindopdracht</h3>
+<h3 style=text-align:center>Ilias mahraoui</h3>
 
 
 <form name="invoer" action="advanced-2.php" method="post">
