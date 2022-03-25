@@ -7,10 +7,12 @@ body {
   color: <?= $_POST["tekstkleur"] ?>;
   background-color: <?= $_POST["achtergrond-color"] ?>;
 }
+
 table,tr,td{
     border: <?= $_POST['border']?>px solid black;
     padding:<?= $_POST['padding']?>px;
 }
+
 </style>
 <center>'
 <table>
@@ -30,14 +32,20 @@ table,tr,td{
 <?php
 
 $mijngegevens=array(
-    "Naam"=> "Ilias Mahraoui",
+    "Naam"=> "ilias mahraoui",
     "Leefdtijd"=> 17,
-    "muzieksmaak"=> "HipHop/Rap",
-    "woonplaats"=>"Amsterdam",
-    "sport"=> "Voetbal");
-    foreach($mijngegevens as $mijngegeves1 => $value){
-        maakRij($mijngegeves1,$value);
-    }
+    "Sport"=> "Voetbal",
+    "Woonplaats"=>"Amsterdam",
+    "Hobby's"=> "Voetbal/gamen");
+   
+
+    foreach ($mijngegevens as $keys => $value) {
+    echo "<body style=background-color:" . $_POST['color2'] . ">
+    <tr>
+    <td style=padding:" . $_POST['padding'] . "px> <p style=color:" . $_POST['color'] . ">" . $keys . "</p> </td>
+    <td style=padding:" . $_POST['padding'] . "px> <p style=color:" . $_POST['color'] . ">" . $value . "</p> </td>
+    </tr>";
+}
 
  ?>
 </table>
