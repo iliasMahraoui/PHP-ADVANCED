@@ -1,55 +1,44 @@
 <!DOCTYPE html>
-<html>
-
-<style>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ilias Mahraoui</title>
+</head>
+<body>
     
-body {
-  color: <?= $_POST["tekstkleur"] ?>;
-  background-color: <?= $_POST["achtergrond-color"] ?>;
-}
-
-table,tr,td{
-    border: <?= $_POST['border']?>px solid black;
-    padding:<?= $_POST['padding']?>px;
-}
-
-</style>
-<center>'
-<table>
-<tr>
-<th>key</th>
-<th>value</th>
-</tr>
-
-<?php function maakRij($mijngegeves1,$value){
-     echo "<tr>
-     <td>".$mijngegeves1."</td>
-     <td>".$value."</td>
-     </tr> ";
-}
-?>
+<center>
 
 <?php
+echo "<table style=border-spacing:" . $_POST['tabelrand'] . "px>";
 
-$mijngegevens=array(
-    "Naam"=> "ilias mahraoui",
-    "Leefdtijd"=> 17,
-    "Sport"=> "Voetbal",
-    "Woonplaats"=>"Amsterdam",
-    "Hobby's"=> "Voetbal/gamen");
-   
+$info = array(
+    "Naam" => "Ilias Mahraoui<br>",
+    "Leeftijd" => "17 jaar<br>",
+    "Woonplaats" => "Amsterdam<br>",
+    "Hobby" => "Voetballen<br>",
+    "Eigenschap" => "LeerGierig<br>"
+);
 
-    foreach ($mijngegevens as $keys => $value) {
+function maakRij($key, $value){
     echo "<body style=background-color:" . $_POST['color2'] . ">
     <tr>
-    <td style=padding:" . $_POST['padding'] . "px> <p style=color:" . $_POST['color'] . ">" . $keys . "</p> </td>
-    <td style=padding:" . $_POST['padding'] . "px> <p style=color:" . $_POST['color'] . ">" . $value . "</p> </td>
+    <th style=padding:" . $_POST['padding'] . "px> <p style=color:" . $_POST['color'] . ">" . $key . "</p> </th>
+    <th style=padding:" . $_POST['padding'] . "px> <p style=color:" . $_POST['color'] . ">" . $value . "</p> </th>
     </tr>";
+
+}
+foreach ($info as $keys => $values) {
+maakRij($keys, $values);
 }
 
- ?>
-</table>
+echo "</table>";
+
+?>
+
 
 </center>
+
 </body>
 </html>
